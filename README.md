@@ -37,7 +37,7 @@ MySQL installed with user `root` password `root` @localhost
 
 ## MailCatcher
 
-MailCatche @ http://192.168.22.11:1080
+MailCatcher @ http://192.168.22.11:1080
 
 MailCatcher settings:
 
