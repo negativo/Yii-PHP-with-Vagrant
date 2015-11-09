@@ -1,0 +1,11 @@
+.idea
+.vagrant
+app/node_modules
+app/bower_components
+bower_components
+node_modules
+.phpintel
+app/assets
+app/images/
+app/protected/runtime
+app/protected/config/*.local.php
