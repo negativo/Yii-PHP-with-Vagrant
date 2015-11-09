@@ -1,6 +1,6 @@
 # Setting up Yii PHP with Vagrant - up and and running in 5 minutes  
 
-Simple vagrant project with yii 1.16 preinstalled 
+This repository aims to have a simple vagrant project with yii 1.16 and all the tools necessary ready in a few minutes. 
 
 ### Step 1
 
