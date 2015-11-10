@@ -52,6 +52,7 @@ ln -s "$(which nodejs)" /usr/bin/node
 echo "App Settings"
 
 mkdir /vagrantyii1/app/assets
-chmod a+x /vagrantyii1/app/protected/runtime
-chmod a+x /vagrantyii1/app/assets
+mkdir /vagrantyii1/app/protected/runtime
+chmod  777 /vagrantyii1/app/protected/runtime
+chmod  777 /vagrantyii1/app/assets
 
