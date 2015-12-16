@@ -53,6 +53,8 @@ echo "App Settings"
 
 mkdir /vagrantyii1/app/assets
 mkdir /vagrantyii1/app/protected/runtime
+mkdir /vagrantyii1/app/images
+mkdir /vagrantyii1/app/images/avatars
+chmod 777 /vagrantyii1/app/images/avatars
 chmod  777 /vagrantyii1/app/protected/runtime
 chmod  777 /vagrantyii1/app/assets
-

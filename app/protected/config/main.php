@@ -20,34 +20,49 @@ return array(
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
+		'ext.giix-components.*',
 		//'ext.giix-components.*',
 	),
 
 	'modules'=>array(
 		// uncomment the following to enable the Gii tool
-		/*
+
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
-			'password'=>'',
+			'password'=>'davide',
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
 			'ipFilters'=>array('*','::1'),
 			'generatorPaths' => array(
 		        'ext.giix-core', // giix generator
 		    ),
 		),
-		*/
-		
+
+
 	),
 
 	// application components
 	'components'=>array(
-		
+
 		'user'=>array(
-			// enable cookie-based authentication
-			'allowAutoLogin'=>true,
-			//'class'=>'application.components.EWebUser',
-		),
+						// enable cookie-based authentication
+						'allowAutoLogin'=>true,
+						'class'=>'application.components.EWebUser',
+				),
 		'GxHtml'=>array('class'=>'application.components.GxHtml'),
+		'mail' => array(
+					'class' => 'application.extensions.yii-mail.YiiMail',
+					'transportType' => 'smtp',
+					'transportOptions' => array(
+							'host' => '{host.com}',
+							'username' => '{username}',
+							'password' => '{password}',
+							'port' => '465',
+							'encryption' => 'ssl',
+					),
+					'viewPath' => 'application.views.user',
+					'logging' => true,
+					'dryRun' => false
+			),
 		// uncomment the following to enable URLs in path-format
 		/*
 		'urlManager'=>array(

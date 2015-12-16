@@ -1,6 +1,6 @@
 # Setting up Yii PHP with Vagrant - up and and running in 5 minutes  
 
-This repository aims to have a simple vagrant project with yii 1.16 and all the tools necessary ready in a few minutes. 
+This repository aims to have a simple vagrant project with yii 1.16 and all the tools necessary ready in a few minutes.
 
 ### Step 1
 
@@ -30,6 +30,38 @@ to view the frontend of your application.
 
 #Docs
 
+## Components
+
+- EWebUser.php
+	user access management
+
+- Util.php
+	some utility functions to provide email and dbimport support
+
+## Extensions
+
+- giix
+  advanced code generation   
+
+- yii-mail
+	advanced email library
+
+- dumpdb
+
+- EAjaxUpload
+	Uploading files using ajax
+
+## User Management
+
+User registration flow already enabled with the following actions:
+
+	/user/register
+	/user/login
+	/user/forgotpassword
+	/profile/changePassword
+
+Profile page, profile update etc ( /profile )
+
 ## MySQL
 
 MySQL installed with user `root` password `root` @localhost
@@ -48,5 +80,3 @@ MailCatcher settings:
 ## Credits
 
 Thanks to [Lorenzo Ferrara](https://github.com/lorenzoferrarajr) for showing me the powerful Vagrant.
-
-
